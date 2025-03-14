@@ -3,73 +3,61 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="icon" href="assets/img/icon-youtube.png" type="image/png">
+   <title>Clonando a Página do Youtube</title>
    <link rel="stylesheet" href="assets/styles.css">
-   <title>Desafio Clone da Página do Youtube</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <div id="menu">
-                <button id="botao-menu"><img src="assets/img/menu.png" alt="botão menu"></button>
-                <div id="icon-youtube"><img src="assets/img/logo-youtube.png" title="Logo do youtube" alt="Ícone vermelho com um botão de play em branco, ao lado se encontra o texto Youtube estilizado com a fonte da identidade visual da marca em branco"></div>
-            </div>
-            <div id="busca">
-                <input type="text" placeholder="Pesquisar">
-                <button><img src="assets/img/search.png" alt="botão de pesquisa"></button>
-            </div>
-            <div id="perfil">
-                <button id="publicacao"><img src="assets/img/video.png" alt="contorno de uma câmera"></button>
-                <button id="notificacao"><img src="assets/img/bell.png" alt="contorno de um sino"></button>
-                <button id="perfil-pessoal"><img src="assets/img/129801520.jfif" alt="imagem de perfil em formato redondo"></button>
-            </div>
-        </nav>
-    </header>
-
-    <main>
-        <div class="video">
-            <div class="video-player">
-                <img src="assets/img/video-thumb.png" alt="Thumbnail do vídeo">
-            </div>
-
-            <div class="video-player-title">
-                <h1>Desafio de CSS da DIO</h1>
-            </div>
-
-            <div id="video-actions">
-                <div id="channel-infos">
-                    <div id="perfil-canal">
-                        <div class="channel-avatar">
-                            <img src="assets/img/channel-dio.png" alt="Canal DIO (Digital Innovation One)">
-                        </div>
-                        <div class="channel-details">
-                            <h3>DIO</h3>
-                            <p>117 mil inscritos</p>
-                        </div>
-                    </div>
-                    <button id="subscrever">Inscreva-se</button>
-                    <button class="button-info"><img src="assets/img/thumbs-up.png" alt="Curtir"> 503</button>
-                    <button class="button-info"><img src="assets/img/thumbs-down.png" alt="Não gostei"> Não gostei</button>
-                    <button class="button-info"><img src="assets/img/share-2.png" alt="Compartilhar"> Compartilhar</button>
-                    <button class="button-info"><img src="assets/img/download.png" alt="Baixar"> Download</button>
-                </div>
-            </div>
-
-            <div class="views">
-                <p>1976 visualizações • 13 de ago. de 2024</p>
-            </div>
-
-            <div class="details">
-                <p>made by Djeni</p>
-            </div>
-        </div>
-
-      
-      <div class="playlist-video">
-         <div class="thumbnail">
-            <div class="thumbnail-video">
-               <img src="assets/img/thumb-01.png" alt="Vídeo Aula DIO">
-            </div>
+   <header>
+      <nav id="left-menu">
+         <img src="assets/img/menu.png" width="24px" alt="botão do menu lateral">
+         <img src="assets/img/logo-youtube.png" width="90px" alt="logo do youtube">
+      </nav>
+      <div id="search">
+         <form action="/search" method="GET" class="search-bar">
+            <input type="text" name="query" placeholder="Buscar..." required>
+            <button type="submit">
+               <img src="assets/img/search.png" alt="botão de busca">
+            </button>
+        </form>
+      </div>
+      <div id="right-infos">
+         <button id="publicacao"><img src="assets/img/video.png" width="24px" alt="contorno de uma câmera"></button>
+         <button id="notificacao"><img src="assets/img/bell.png" width="24px" alt="contorno de um sino"></button>
+         <button id="perfil-pessoal"><img src="assets/img/129801520.jfif" width="34px" alt="imagem de perfil em formato redondo"></button>
+      </div>
+   </header>
+   <div class="content">
+      <main>
+      <div class="video">
+         <img src="assets/img/video-thumb.png"" alt="thumbnail do vídeo">
+      </div>
+      <div class="titulo">
+         <h1>Javascript na prática usando HTML e CSS | DIO</h1>
+      </div>
+      <div id="video-actions">
+         <div id="channel-infos">
+            <img src="assets/img/channel-dio.png" width="42px" alt="foto de perfil da dio">
+            <h5 width="14px"><strong>DIO</strong><br>83,3 mil inscritos</h5>
+         </div>
+         <button type="button" id="subscribe">Inscreva-se</button>
+         <button class="button-info"><img src="assets/img/thumbs-up.png" alt="Curtir"> 503</button>
+         <button class="button-info"><img src="assets/img/thumbs-down.png" alt="Não gostei"> Não gostei</button>
+         <button class="button-info"><img src="assets/img/share-2.png" alt="Compartilhar"> Compartilhar</button>
+         <button class="button-info"><img src="assets/img/download.png" alt="Baixar"> Download</button>
+      </div>
+      <div class="views">
+         <p>1976 visualizações • 13 de ago. de 2024</p>
+      </div>
+      <div class="details">
+         <p>made by Djeni</p>
+      </div>
+      </main>
+      <aside>
+         <div class="playlist-video">
+            <div class="thumbnail">
+               <div class="thumbnail-video">
+                  <img src="assets/img/thumb-01.png" alt="Vídeo Aula DIO">
+               </div>
             <div class="thumbnail-infos">
                <h2>Geração Tech Unimed - BH - Ciência de Dados</h2>
                <div class="thumbnail-channel">
@@ -81,7 +69,6 @@
                </div>
             </div>
          </div>
-
          <div class="thumbnail">
             <div class="thumbnail-video">
                <img src="assets/img/thumb-02.png" alt="Vídeo Aula DIO">
@@ -97,7 +84,6 @@
                </div>
             </div>
          </div>
-
          <div class="thumbnail">
             <div class="thumbnail-video">
                <img src="assets/img/thumb-03.png" alt="Vídeo Aula DIO">
@@ -113,7 +99,6 @@
                </div>
             </div>
          </div>
-
          <div class="thumbnail">
             <div class="thumbnail-video">
                <img src="assets/img/thumb-04.png" alt="Vídeo Aula DIO">
@@ -129,7 +114,6 @@
                </div>
             </div>
          </div>
-
          <div class="thumbnail">
             <div class="thumbnail-video">
                <img src="assets/img/thumb-05.png" alt="Vídeo Aula DIO">
@@ -144,8 +128,7 @@
                   <p>Transmitido há 6 dias</p>
                </div>
             </div>
-         </div>
-         
+         </div>       
          <div class="thumbnail">
             <div class="thumbnail-video">
                <img src="assets/img/thumb-01.png" alt="Vídeo Aula DIO">
@@ -161,7 +144,6 @@
                </div>
             </div>
          </div>
-
          <div class="thumbnail">
             <div class="thumbnail-video">
                <img src="assets/img/thumb-02.png" alt="Vídeo Aula DIO">
@@ -177,7 +159,6 @@
                </div>
             </div>
          </div>
-
          <div class="thumbnail">
             <div class="thumbnail-video">
                <img src="assets/img/thumb-03.png" alt="Vídeo Aula DIO">
@@ -193,7 +174,6 @@
                </div>
             </div>
          </div>
-
          <div class="thumbnail">
             <div class="thumbnail-video">
                <img src="assets/img/thumb-04.png" alt="Vídeo Aula DIO">
@@ -203,13 +183,14 @@
                <div class="thumbnail-channel">
                   <p>DigitalInnovationOne</p>
                </div>
-               <div class="thumbnail-views">
-                  <p>971 visualizações</p>
-                  <p>Transmitido há 5 dias</p>
+                  <div class="thumbnail-views">
+                     <p>971 visualizações</p>
+                     <p>Transmitido há 5 dias</p>
+                  </div>
                </div>
             </div>
          </div>
-      </div>
-   </main>
+      </aside>
+   </div>
 </body>
 </html>
