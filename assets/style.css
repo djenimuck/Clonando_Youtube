@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+
+body {
+    background-color: #181818;
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px; 
+    width: 100vw;
+    height: 100vh;
+}
+
+
+/*Cabeçalho*/
+header {
+    background-color: #202020;
+    width: 100%;
+    padding: 24px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    flex: 0 0 20%;
+    align-items: center;
+    width: 100%;
+    justify-content: left;
+    gap: 10px;
+}
+
+#search {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    width: 60%; 
+    margin: 0 10px; 
+}
+
+.search-bar {
+    display: flex; 
+    width: 100%; 
+}
+
+#search input {
+    flex: 1; 
+    padding: 8px;
+    border-radius: 20px;
+    border: 1px solid #303030;
+    background: #121212;
+    color: #FFF;
+    font-size: 14px; 
+    height: 36px;  
+    margin-right: 10px; 
+}
+
+#search button {
+    background: none; 
+    border: none;    
+    padding: 0; 
+    cursor: pointer;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    height: 36px; 
+}
+
+#search button img {
+    width: 28px;  
+    height: 28px;  
+}
+
+#right-infos {
+    display: flex;
+    flex: 0 0 20%;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+#right-infos button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#perfil-pessoal img {
+    width: 34px;    
+    height: 34px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+ 
+ ul li {
+    list-style: none;
+ }
+ 
+ a {
+    text-decoration: none;
+    color: #FFF;
+    cursor: pointer;
+ }
+ 
+ h1, h2, h3 {
+    font-size: 14px;
+ }
+ 
+ h1, h2 {
+    font-weight: 700;
+ }
+ 
+ h3 > a {
+    font-weight: 400;
+ }
+ 
+ p {
+    font-size: 12px;
+    font-weight: 400;
+    color: #c1c1c1;
+ }
+
+
+main {
+    width: 100%;
+    height: max-content ;
+    padding-top: 80px;
+ }
+ 
+ main .content {
+    display: flex;
+ }
+ 
+ /* SIDEBAR*/
+ 
+ main .content .sidebar {
+    width: 15.14%;
+    padding: 24px;
+ }
+ 
+ main .content .sidebar .home,
+ main .content .sidebar .explore,
+ main .content .sidebar .subscriptions,
+ main .content .sidebar .youtube-music,
+ main .content .sidebar .videos-like,
+ main .content .sidebar .watch-later,
+ main .content .sidebar .downloads,
+ main .content .sidebar .movies,
+ main .content .sidebar .learn,
+ main .content .sidebar .sports {
+    display: flex;
+    align-items: center;
+    padding-bottom: 22px;
+ }
+ 
+ main .content .sidebar .home h1,
+ main .content .sidebar .explore h3,
+ main .content .sidebar .subscriptions h3,
+ main .content .sidebar .youtube-music h3,
+ main .content .sidebar .videos-like h3,
+ main .content .sidebar .watch-later h3,
+ main .content .sidebar .downloads h3,
+ main .content .sidebar .movies h3,
+ main .content .sidebar .learn h3,
+ main .content .sidebar .sports h3 {
+    margin-left: 16px;
+ }
+ 
+ 
+ /* LIST VIDEOS */
+ main .content .list-videos {
+    background: transparent;
+    width: 100%;
+    padding-top: 24px;
+    padding-right: 24px;
+    padding-left: 28px;
+    display: grid;
+    grid-template-columns: repeat(4, 350px);
+    grid-auto-rows: 350px;
+    justify-content: center;
+    gap: 18px
+ }
+ 
+ main .content .list-videos .video {
+    padding: 16px;
+ }
+ 
+ main .content .list-videos .video .channel-informations {
+    display: flex;
+    padding-top: 16px;
+ }
+ 
+ main .content .list-videos .video .channel-informations .descriptions-video {
+    margin-left: 10px;
+ }
+ 
+ main .content .list-videos .video .channel-informations .descriptions-video .views-date {
+    padding-top: 16px;
+ }
